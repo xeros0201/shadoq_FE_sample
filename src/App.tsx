@@ -1,10 +1,10 @@
 import "./App.css";
-import Login from "./components/form/Login";
+import SignUp from "./components/form/SignUp";
 
 function App() {
   return (
     <div className="flex items-center justify-center h-screen ">
-      <Login />
+      <SignUp />
     </div>
   );
 }

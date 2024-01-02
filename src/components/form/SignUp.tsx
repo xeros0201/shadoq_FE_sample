@@ -8,7 +8,7 @@ interface FormData {
   email: string;
   password: string;
 }
-const Login = () => {
+const SignUp = () => {
   const [formData, setFormData] = useState<FormData>({
     username: "",
     email: "",
@@ -21,7 +21,7 @@ const Login = () => {
   };
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
+    alert(JSON.stringify(formData, null, 2));
   };
   return (
     <form
@@ -63,4 +63,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
