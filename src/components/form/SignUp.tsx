@@ -21,7 +21,7 @@ const SignUp = () => {
   };
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert(JSON.stringify(formData, null, 2));
+    alert(`Welcome ... ${username}`);
   };
   return (
     <form
